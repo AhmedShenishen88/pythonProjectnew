@@ -20,3 +20,22 @@ class Player:
                 self.symbol = symbol.upper()
                 break
             print("Invalid symbol ,Please enter one Letter only. ")
+
+
+class Menu:
+    def display_main_menu(self):
+        print("Welcome to the game x o ")
+        print("Please Choose one of the of these symbol")
+        print("1 - for Start Game ")
+        print("2 - for End Game ")
+
+        while True:
+            choice = int(input("Enter your choice: from 1 or 2 \n"))
+            if choice == 1 or choice == 2:
+                print("Okay,right")
+                break
+            print("Invalid Choice ,Please try again")
+
+
+t1 = Menu()
+t1.display_main_menu()
