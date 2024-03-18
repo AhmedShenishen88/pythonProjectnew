@@ -15,6 +15,7 @@ class Player:
     def choose_symbol(self):
         while True:
             symbol = input(f"Hello {self.name} Enter your Symbol for game Only one letter please. ")
+            print("Thanks")
             if symbol.isalpha() and len(symbol) == 1:  # isalpha for check if the letters is string or not and (len) for length of letter
                 self.symbol = symbol.upper()
                 break
